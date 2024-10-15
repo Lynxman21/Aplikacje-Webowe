@@ -1,0 +1,25 @@
+.main{
+    width: 100%;
+    height: 110px;
+}
+.element {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: 1%;
+}
+img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: 1%;
+}
+table, td, th {
+    border: 1px solid black
+}
+table {
+    border-collapse: collapse;
+}
+body {
+    background-color: blanchedalmond;
+}
