@@ -1,0 +1,75 @@
+* {
+    text-decoration: none;
+    font-family: "questrial-regular", sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color:white;
+}
+
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bar {
+    grid-column: 1/ 5;
+    grid-row: 1/1;
+    background-color: lightblue;
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.barelement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+#container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 80px 3fr 3fr;
+    grid-gap: 1em;
+}
+
+.row1 {
+    grid-row: 2;
+    width: 100%;
+}
+
+.row2 {
+    grid-row: 3;
+    width: 100%;
+}
+
+.row3 {
+    grid-row: 4;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: lightblue;
+}
