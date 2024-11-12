@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Filmowy</title>
+        <link rel="stylesheet" href="./style_contact.css">
+        <script src="./form.js"></script>
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container_contact">
+            <nav class="bar">
+                <div class="barelement">
+                    <div id="logo"><a href="index.html"><img src="logo.png" height="70px" width="70px"></a></div>
+                    <ul>
+                        <li><a href="./biografia.html">Biografia</a></li>
+                        <li><a href="./filmy.html">Filmy</a></li>
+                        <li><a href="./galeria.html">Galeria</a></li>
+                        <li><a href="./kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="Forms">
+                <h1>Kontakt</h1>
+                <form>
+                    <lable>E-mail</lable>
+                    <input type="text" placeholder="abc@domain.com"><br/><br/>
+                    <label><h3>Temat</h3></label>
+                    <select>
+                        <option value="Nowy film">Nowy film</option>
+                        <option value="Uwaga">Uwaga</option>
+                        <option value="Pytanie">Pytanie</option>
+                    </select>
+                    <br/><br/>
+                    <textarea id="message" cols="100" rows="25" placeholder="Text"></textarea><br/>
+                    <button type="submit">
+                        Wyślij
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <footer>
+        Mateusz Ryś
+    </footer>
+</html>

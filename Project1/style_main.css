@@ -1,0 +1,124 @@
+* {
+    text-decoration: none;
+    font-family: "questrial-regular", sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color:white;
+}
+
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 80px 3fr 4fr 4fr 4fr 0.02fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+.bar {
+    grid-column: 1;
+    grid-row: 1/1;
+    background-color: lightblue;
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.barelement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.intro {
+    grid-row: 2;
+    text-align: center;
+}
+
+.m1 {
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.img {
+    grid-row: 1;
+    height: 100%;
+    width: auto;
+}
+
+.first {
+    grid-column: 2;
+}
+
+.text {
+    text-align: center;
+}
+
+.incepcja {
+    grid-column: 1;
+}
+
+.m2 {
+    grid-row: 4;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.interstellar {
+    grid-column: 2;
+}
+
+.second {
+    grid-column: 1;
+}
+
+.m3 {
+    grid-row: 5;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.openheimer {
+    grid-column: 1;
+}
+
+.third {
+    grid-column: 2;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: lightblue;
+}

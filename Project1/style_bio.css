@@ -1,0 +1,92 @@
+* {
+    text-decoration: none;
+    font-family: "questrial-regular", sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color:white;
+}
+
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#container-bio {
+    display: grid;
+    width: 100%;
+    height: auto;
+    height: 100%;
+    grid-template-rows: 80px 3fr;
+    grid-gap: 1em;
+}
+
+.bar {
+    grid-column: 1/ 5;
+    grid-row: 1/1;
+    background-color: lightblue;
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.barelement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+#life {
+    display: grid;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+}
+
+#text1 {
+    grid-column: 1;
+}
+
+#first_img {
+    grid-column: 2;
+}
+
+#movies {
+    display: grid;
+    grid-row: 3;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#text2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#second_img {
+    grid-column: 1;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: lightblue;
+}
