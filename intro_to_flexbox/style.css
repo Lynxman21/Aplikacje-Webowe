@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(143, 152, 168);
+}
+
+#container {
+    background-color: rgb(212, 223, 242);
+    padding: 20px;
+    height: 850px;
+    display: flex;
+    /* ustawienie według osi głównej osie defaoultowo główna to pozioma a poboczna to pionowa
+    justify-content: space-around;
+    /* a tu pobocznej
+    align-items: baseline;
+    */
+    /* Zmiana kierunku , można ustawić też reversed*/
+    /* flex-direction: row-reverse;
+    align-items: center; */
+    /* Jak zachowuje się przy przeskakiwaniu jak miejsca brakuje */
+    flex-wrap: wrap; /*itemy się zawijają*/
+    align-content: center;
+}
+
+#container div {
+    margin: 10px;
+    width: 200px;
+}
+
+#green {
+    background-color: green;
+    height: 100px;
+    /* order: 1; */
+}
+
+#yellow {
+    background-color: rgb(242, 211, 56);
+    height: 250px;
+    /* align-self: flex-start; */
+    /* flex-grow: 2;
+    flex-basis: 0; */
+}
+
+#blue {
+    background-color: rgb(55, 55, 213);
+    height: 300px;
+    /* flex-grow: 1; */
+    /* ustala, że przy obliczaniu ile pixeli dostaną divy myśli, że one mają bazowo 0px */
+    /* flex-basis: 0; */
+}
+
