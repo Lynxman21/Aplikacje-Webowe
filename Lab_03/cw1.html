@@ -4,18 +4,31 @@
         <meta charset="utf-8"/>
         <title>Lab 3</title>
         <style>
-
+            body {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #time {
+                font-size: 48px;
+                margin-right: 20px;
+            }
+            #action {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
         </style>
         <script src="./stoper.js" defer></script>
     </head>
     <body>
         <div id="time">
-
+            0s
         </div>
         <div id="action">
-            <button>Start</button>
-            <button>Stop</button>
-            <button>Reset</button>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
         </div>
     </body>
 </html>
