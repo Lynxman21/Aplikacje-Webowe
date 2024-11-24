@@ -17,7 +17,7 @@ const crosshair = new Image();
 crosshair.src = './images/aim.png';
 
 const zombieSprite = new Image();
-zombieSprite.src = './images/walkingdead.png'; // Sprite sheet zombi
+zombieSprite.src = './images/walkingdead.png';
 
 let lives = 3;
 let score = 0;
@@ -45,7 +45,6 @@ class Zombie {
     update() {
         this.x -= this.speed;
 
-        // Obsługa animacji
         const now = Date.now();
         if (now - this.lastFrameTime > this.frameDelay) {
             this.currentFrame = (this.currentFrame + 1) % this.totalFrames;
@@ -54,13 +53,13 @@ class Zombie {
     }
 
     draw() {
-        const spriteX = this.currentFrame * this.frameWidth; // Pozycja X w sprite sheet
+        const spriteX = this.currentFrame * this.frameWidth;
         ctx.drawImage(
             zombieSprite,
-            spriteX, 0, // Wycinanie aktualnej klatki z sprite sheet
+            spriteX, 0,
             this.frameWidth, this.frameHeight,
             this.x, this.y,
-            this.frameWidth * this.scale, this.frameHeight * this.scale // Rysowanie zombie na canvasie
+            this.frameWidth * this.scale, this.frameHeight * this.scale
         );
     }
 }

@@ -26,7 +26,6 @@ function setDisplay() {
 function startTime() {
     if (!isRunning) {
         isRunning = true;
-        //interval to po prostu taki while true tylko że ustalamy co ile operacje się powtarzają w ms
         timer = setInterval(() => {
             sec++;
             if (sec === 60) {
@@ -41,7 +40,6 @@ function startTime() {
 function stopTime() {
     if (isRunning) {
         isRunning = false;
-        //powoduje zatrzymanie
         clearInterval(timer);
     }
 }

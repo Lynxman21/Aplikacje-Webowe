@@ -15,7 +15,7 @@ function generateChar(type) {
         range = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjlkzxcvbnm';
     }
     else if (type == 2){
-        range = 'QWERTYUIOPASDFGHJKLZXCVBNM12334567890!@#$%^&*()<>?/';
+        range = 'qwertyuiopasdfghjlkzxcvbnm12334567890!@#$%^&*()<>?/';
     }
     else {
         range = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjlkzxcvbnm12334567890!@#$%^&*()<>?/';
@@ -25,22 +25,18 @@ function generateChar(type) {
 
 function generatePassword() {
     let password = '';
-    //nic nie zaznaczone
     let type = 0;
     let mini = parseInt(min_len.value);
     let maxi = parseInt(max_len.value);
 
     let length = Math.floor(Math.random()*(maxi-mini) + mini);
 
-    //1 to czy zaznaczone duże litery
     if (capital.checked == 1) {
         type = 1;
     }
-    //2 to czy zaznaczone litery specjalne
     if (special.checked == 1) {
         type = 2;
     }
-    //Oba zazbaczone
     if (capital.checked == 1 && special.checked == 1) {
         type = 3;
     }
