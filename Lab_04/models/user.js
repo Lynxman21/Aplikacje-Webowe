@@ -1,4 +1,4 @@
-//Sequelize configuration. It is used to write object and then convert them to tables. It is ORM tool. We have to install sequelize
+//Sequelize configuration. It is used to write objects and then convert them to tables. It is ORM tool. We have to install sequelize
 const {Sequelize,DataTypes} = require('sequelize');
 const sequelize = new Sequelize({
     dialect: 'sqlite',

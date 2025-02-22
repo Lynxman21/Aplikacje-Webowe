@@ -2,7 +2,7 @@
 const sqlite3 = require('sqlite3').verbose(); //additional diagnosing comunications (verbose())
 const db = new sqlite3.Database('./db/database.sqlite')//Path from root folder
 
-db.serialize(() => {
+db.serialize(() => { //All tasks are done after previous one (normally it's asynchronic)
    db.run(`CREATE TABLE IF NOT EXISTS books (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
