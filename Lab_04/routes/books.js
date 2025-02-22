@@ -1,6 +1,6 @@
 //definition of operations whitch we do on books
 const express = require('express');
-const router = express.Router(); //defines routes
+const router = express.Router(); //defines routes, used for path and partial code
 
 const booksService = require('../services/booksService')
 

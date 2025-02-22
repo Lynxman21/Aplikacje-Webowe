@@ -1,7 +1,7 @@
 //main file, it defines common settings of server
 const express = require('express'); //To web apps and servers (HTTP requests)
 const app = express();
-const bodyParser = require('body-parser') //middleware (functions which has access to request and response object) it parse JSON, data are
+const bodyParser = require('body-parser') //middleware (functions which has access to request and response object) it parse JSON to JS class, data are
 // availabe in req.body
 
 //import books.js file
@@ -16,4 +16,4 @@ app.listen(PORT, () => {
     console.log(`Serwer działa na http://localhost:${PORT}`);
 })
 
-//How to run our server? Polecenie node app.js i idziemy do Postmana
+//How to run our server? Command node app.js and run Postman
